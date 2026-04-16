@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak Özer | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="ust-menu">
+        <div class="container menu-flex">
+            <div class="logo">BURAK<span>.DEV</span></div>
+            <nav class="navigasyon">
+                <a href="#hakkimda">Hakkımda</a>
+                <a href="#projeler">Projeler</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="karsilama">
+        <div class="karsilama-icerik">
+            <h1 class="fade-in">Burak Özer</h1>
+            <p class="typing-container">
+                <span class="typing-text" data-words='["C# Developer", "Otomasyon Mimarı", "Sinema Sistemleri Geliştiricisi", "Minecraft Network Admin"]'></span>
+                <span class="cursor">|</span>
+            </p>
+            
+            <div class="sosyal-medya">
+                <a href="https://github.com/Burak-Ozer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/burak-özer-bb6966403" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/burak_ozer03_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <a href="#projeler" class="ana-buton">Çalışmalarımı İncele</a>
+        </div>
+    </section>
+
+    <section id="hakkimda" class="bolum">
+        <div class="container">
+            <h2 class="baslik reveal">Hakkımda & Yetenekler</h2>
+            <div class="hakkimda-grid">
+                <div class="hakkimda-yazi reveal">
+                    <p>Bilişim Teknolojileri ve Yazılım Geliştirme öğrencisiyim. Geliştirdiğim projelerde özellikle C# ve SQL veritabanı entegrasyonuna odaklanıyorum.</p>
+                    <p><strong>Araç Kiralama</strong> ve <strong>Sinema Bilet</strong> otomasyonları gibi kurumsal mantık gerektiren sistemler üzerine yoğun bir çalışma geçmişine sahibim.</p>
+                </div>
+                
+                <div class="yetenekler reveal">
+                    <div class="yetenek">
+                        <div class="yetenek-bilgi"><span>C# & .NET Framework</span><span>95%</span></div>
+                        <div class="bar"><div class="doluluk" data-width="95%"></div></div>
+                    </div>
+                    <div class="yetenek">
+                        <div class="yetenek-bilgi"><span>SQL Server / MySQL</span><span>88%</span></div>
+                        <div class="bar"><div class="doluluk" data-width="88%"></div></div>
+                    </div>
+                    <div class="yetenek">
+                        <div class="yetenek-bilgi"><span>HTML / CSS / JS</span><span>82%</span></div>
+                        <div class="bar"><div class="doluluk" data-width="82%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler" class="bolum gri-ton">
+        <div class="container">
+            <h2 class="baslik reveal">Projelerim</h2>
+            <div class="proje-grid">
+                
+                <div class="proje-kart reveal">
+                    <div class="proje-ikon">🚗</div>
+                    <h3>Araç Kiralama Otomasyonu</h3>
+                    <p>C# tabanlı, SQL veritabanı ile müşteri ve araç yönetimini sağlayan kurumsal çözüm.</p>
+                    <div class="etiket">C# / MySQL</div>
+                </div>
+
+                <div class="proje-kart reveal">
+                    <div class="proje-ikon">🎬</div>
+                    <h3>Sinema Bilet Otomasyonu</h3>
+                    <p>Koltuk haritası yönetimi ve film seans takibi yapan gelişmiş C# masaüstü projesi.</p>
+                    <div class="etiket">C# / MySQL</div>
+                </div>
+
+                <div class="proje-kart reveal">
+                    <div class="proje-ikon">🛡️</div>
+                    <h3>Dravon Network</h3>
+                    <p>Minecraft sunucu mimarisi ve yüksek trafikli ağ yönetimi optimizasyonu.</p>
+                    <div class="etiket">Java Mimarisi Ve Sistem Yönetimi</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="bolum">
+        <div class="container">
+            <h2 class="baslik reveal">İletişim</h2>
+            <div class="iletisim-kapsayici">
+                <form id="my-form" action="https://formspree.io/f/xqewpywz" method="POST" class="iletisim-formu reveal">
+                    <input type="text" name="name" placeholder="Adınız Soyadınız" required>
+                    <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                    <textarea name="message" placeholder="Mesajınız..." rows="6" required></textarea>
+                    <button type="submit" id="submit-btn" class="ana-buton">Mesajı Gönder</button>
+                    <p id="status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span>Burak Özer</span>. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
